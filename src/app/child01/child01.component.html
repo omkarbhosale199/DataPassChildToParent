@@ -1,0 +1,28 @@
+<!-- <pre>
+  // Step 1 child01 component ts file
+  @Output() childMassageToParent = new EventEmitter <any> ()
+             
+//.............................................................................................
+ //Step 2  parent01 component html file
+app-child01 (childMassageToParent)="receiveMassage($event)" > /app-child01>
+ $event is useful for receive all details
+//.............................................................................................
+//Step 3  parent01 component ts file
+receiveMassage(message:any){
+  console.log("massage receive from child01 is",message);
+}
+//.............................................................................................
+// Step 4 child01  component html file
+ button (click)="sendMassage()"> /button>
+//.............................................................................................
+ //step 5 child01  component ts file
+  sendMassage(){
+    this.childMassageToParent.emit("Doing practice every Day of all concept")
+      name of emitted event --- >> childMassageToParent ( refer step 1)
+  }
+//............................................................................................
+  </pre> -->
+
+  <!-- Step 4 -->
+
+<button (click)="sendMassage()">Send Data to parent01 component</button>

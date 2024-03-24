@@ -1,0 +1,8 @@
+<p>parent01 works!</p>
+
+<!-- Step 2 -->
+<app-child01 (childMassageToParent)="receiveMassage($event)" ></app-child01>
+<!--    event raise in child01.ts = method call by parent01.ts -->
+
+<!-- $event is useful for receive all details -->
+<!-- $event is like parameter to this Method -- >> receiveMassage($event) -->
